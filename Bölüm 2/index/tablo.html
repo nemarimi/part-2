@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablo</title>
+    <style>
+        .body{padding-top: 200px;}
+        .tabletwo{border: 5px solid palevioletred; margin: center; text-align: center; height: 20px; width: 1000px; margin: auto; border-collapse: collapse;}
+        .stok{float: block; height: 30px; float: right;}
+        .tdbaslik{ background-color: rgb(228, 167, 193);  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        .td1{ background-color: rgb(236, 209, 220);  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+        .td2{ background-color: rgb(226, 150, 181);  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+        .td3{ background-color: rgb(221, 139, 172);  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+
+        table,td,tr{
+            color: rgb(0, 0, 0);
+            border-collapse: collapse;
+            width: 800px;
+            border: 2px solid palevioletred;
+        }
+        .icerik td{
+            background-color: rgb(255, 226, 231);
+            height: 20px;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<div>
+    <body class="body">
+        <table class="tabletwo" border="2px solid black">
+            <tr>
+            <td class="tdbaslik" colspan="3">Stoklar</td> 
+            </tr>
+            <tr>
+                <td class="td1" >Sıra No</td>
+                <td class="td2">Ürün Adı</td>
+                <td class="td3">Stok Adedi</td>
+            </tr>
+            <tr>
+                <td class="td1" >1</td>
+                <td class="td2">Kağıt</td>
+                <td class="td3">10</td>
+            </tr>
+            <tr>
+                <td class="td1" >2</td>
+                <td class="td2">Kalem</td>
+                <td class="td3">6</td>
+            </tr>
+            <tr>
+                <td class="td1" >3</td>
+                <td class="td2">Silgi</td>
+                <td class="td3">20</td>
+            </tr>
+        </table>
+    </body>
+
+</div>
+
+<br>
+<br>
+<br>
+
+
+<div>
+            <table class="icerik">
+                <tr>
+                    <td colspan="5">1</td>
+                </tr>
+                <tr>
+                    <td colspan="2">2</td>
+                    <td >3</td>
+                    <td colspan="2">4</td>
+                </tr>
+                <tr>
+                    <td rowspan="5">5</td>
+                    <td>6</td>
+                    <td colspan="2" >7</td>
+                    <td rowspan="5"">8</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td  rowspan="2">10</td>
+                    <td>11</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td  rowspan="2">13</td>
+                </tr>
+            </table>
+    </div>
+
+</html>

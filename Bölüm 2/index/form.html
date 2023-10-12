@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form1</title>
+    <style>
+        .div{
+            margin: auto;
+            text-align: left;
+            padding-top: 100px;
+            padding-left: 100px;
+        }
+        .form{
+            
+            border: 1px solid black;
+            float: left;
+            padding-left: 10px;
+            padding-top: 10px;
+            padding-right: 10px;
+        }
+        .form2{
+            border: 2px solid black;
+            margin: auto;
+        }
+        .border{
+            border: 1px solid black;
+            margin: auto;
+            padding: 5px;
+            display: -ms-inline-flexbox;
+        }
+        .body2{
+            padding-top: 200px;
+        }
+        .kimlik{
+            width: 500px;
+            height: 25px;
+            border: 1px solid black;
+            border-collapse: collapse;
+            background: #ff7300;
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .table{
+            text-align: center;
+            border: 2px solid black;
+            border-collapse: collapse;
+            margin: auto;
+        }
+        .td1{
+            border: 1px solid black;
+            border-collapse: collapse;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: #ffc7b0;
+        }
+        .td2{
+            height: 10px;
+            border: 1px solid black;
+            border-collapse: collapse;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: #ffc7b0;
+        }
+        .photo{
+            width: 50px;    
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="div">
+        <form action="" class="form">
+            <label for="ad">Ad</label>
+            <input type="text"  placeholder="Adınızı Giriniz" id="ad">
+            <br>
+            <br>
+            <label for="soyad" >Soyad </label>
+            <input type="text" placeholder="Soyadınızı Giriniz" id="soyad">
+            <br>
+            <br>
+            <label for="age" >Yaş </label>
+            <input type="text" placeholder="Yaşınızı Giriniz" id="age">
+            <br>
+            <br>
+            <label for="image">Resim Ekle</label>
+            <input type="file" name="image" id="image">
+            <br>
+            <br>
+            <label for="tc" >Tc No </label>
+            <input type="text" placeholder="Tc No Giriniz" id="tc">
+            <br>
+            <br>
+            <label for="text">Cinsiyetiniz</label>
+            <br>
+            <label for="kadın">K</label>
+            <input type="radio" name="gender" value="kadın" id="kadın"> 
+            <label for="erkek">E</label>
+            <input type="radio" name="gender" value="erkek" id="erkek">
+            <br>
+            <br>
+            <label for="text">Yabancı Diller</label>
+            <br>
+            <label for="ingilizce">İngilizce</label>
+            <input type="checkbox" id="ingilizce" value="ingilizce">
+            <label for="fransızca">Fransızca</label>
+            <input type="checkbox" id="fransızca" value="fransızca">
+            <label for="japonca">Japonca</label>
+            <input type="checkbox" id="japonca" value="japonca"> 
+            <br>
+            <br>
+            <label for="adres">Adresiniz: </label>
+            <br>
+            <textarea name="gorus" id="adres" cols="30" rows="5" placeholder="görüşleriniz bizim için önemli"></textarea>
+            <br>
+            <br>
+            <button type="submit">Gönder</button>
+            <button type="reset" >Temizle</button>
+            <br>
+            <br>
+        </form>
+    </div>
+
+    <div>
+            <table class="border">
+                    <form class="form2" class="border">
+                        <tr >
+                            <td class="border"><label for="adı">Ad</label></td>
+                            <td><input type="name" name="name" id="adı" placeholder="Adınızı Giriniz" class="border"></td>
+                        </tr>
+                        <tr>
+                            <td class="border"><label for="sad">Soyad</label> </td>
+                            <td><input type="text" name="name" id="sad" placeholder="Soyadınızı Giriniz" class="border"></td>
+                        </tr>
+                        <tr>
+                            <td class="border"><label for="yas">Yaş</label></td>
+                            <td><input type="number" name="number" id="yas" placeholder="Yaşınızı Giriniz"></td>
+                        </tr>
+                        <tr>
+                            <td class="border"><label for="resim">Resim Ekle</label></td>
+                            <td><input type="file" name="file" id="resim" class="border"></td>
+                        </tr>
+                        <tr>
+                            <td class="border"><label for="tcno">Tc No</label></td>
+                            <td><input type="text" name="text" id="tcno" placeholder="Lütfen Tc Giriniz." class="border"></td>
+                        </tr>
+                        <tr>
+                            <td class="border"><label for="gender">Cinsiyetiniz</label></td>
+                            <td>
+                                <label for="female">K</label>
+                                <input type="radio" name="gender" id="female">
+                                <label for="male">E</label>
+                                <input type="radio" name="gender" id="male"></td>
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td class="border">Yabancı Diller</td>
+                            <td class="border">
+                                <label for="İngilizce">İngilizce</label>
+                                <input type="checkbox" name="dil" id="İngilizce">
+                                <label for="İspanyolca">İspanyolca</label>
+                                <input type="checkbox" name="dil" id="İspanyolca">
+                                <label for="İtalyanca">İtalyanca</label>
+                                <input type="checkbox" name="dil" id="İtalyanca">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="border"><label for="gorus">Görüş</label></td>
+                            <td><textarea name="text" id="gorus" cols="30" rows="5" placeholder="Görüşleriniz bizim için önemli."></textarea></td>
+                        </tr>
+                        <tr>
+                            <td class="border">
+                                <button type="submit">Kaydet</button>
+                                <button type="reset">Temizle</button>
+                            </td>
+                        </tr>
+                    </form>
+                    
+                </table>
+        
+        
+            </div>
+
+
+
+            <div class="body2">
+                <table class="table">
+                        <tr>
+                            <td class="kimlik" colspan="3">kimlik</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">Ad</td>
+                            <td class="td1">İchigo</td>
+                            <td rowspan="3" class="photo"> <img src="../images/ichigomdaichigom.jpeg" alt="İchigo Kurosaki"> </td>
+                        </tr>
+                        <tr>
+                            <td class="td1">Soyad</td>
+                            <td class="td1">Kurosaki</td>
+                            
+                        </tr>
+                        <tr>
+                            <td class="td1">Doğum Tarihi</td>
+                            <td class="td1">15 Haziran</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="td2"> Öğrenci</td>
+                            <td class="td2">Okul No: 2814</td>
+                        </tr>
+                        
+                    </table>
+        
+        
+            </div>
+
+
+</body>
+</html>
